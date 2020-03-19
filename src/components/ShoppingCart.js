@@ -18,6 +18,7 @@ const ShoppingCart = () => {
 			{cart.map(item => (
 				<Item key={item.id} {...item} removeItem={removeItem}/>
 			))}
+			
 
 			<div className="shopping-cart__checkout">
 				<p>Total: ${getCartTotal()}</p>
